@@ -6,7 +6,7 @@ var app = express();
 app.use('/build', express.static('build'));
 
 app.get('*', function(req, res) {
-  res.sendFile(__dirname + '/src/index.html');
+  res.sendFile(__dirname + '/index.html');
 })
 var server = http.createServer(app)
 

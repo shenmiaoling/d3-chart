@@ -1,5 +1,6 @@
 import * as d3 from 'd3';
 require("./styles/bubble.styl")
+require("./barChart.js")
 var width = 700, height = 300;
     // SVG画布边缘与图表内容的距离
     var padding = { top: 50, right: 50, bottom: 50, left: 50 };
@@ -29,7 +30,7 @@ var width = 700, height = 300;
     var yScale = d3.scaleLinear()
             .domain([0, 50])
             .range([height - padding.top - padding.bottom, 0]);
-    var xAxis = d3.axisTop()
+    var xAxis = d3.axisBottom()
             .scale(xScale)
 
     var yAxis = d3.axisRight()
