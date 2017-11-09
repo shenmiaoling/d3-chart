@@ -21,6 +21,10 @@ module.exports = {
        exclude: /node_modules/
      },
      {
+        test: /\.(c|d|t)sv$/,
+        use: ['dsv-loader']
+      },
+     {
         test: /\.styl$/,
         loader: 'style-loader!css-loader!stylus-loader',
         exclude: /node_modules/,
