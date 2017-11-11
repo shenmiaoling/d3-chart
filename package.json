@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "build": "babel src -d lib"
+    "build": "NODE_ENV=production webpack --config webpack.production.js"
   },
   "author": "",
   "license": "ISC",
