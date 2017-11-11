@@ -1,11 +1,11 @@
 const path = require('path');
-var webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-template: './index.html',
-filename: 'index.html',
-inject: 'body'
-})
+// var webpack = require('webpack')
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
+// template: './index.html',
+// filename: 'index.html',
+// inject: 'body'
+// })
 module.exports = {
   entry: {
     index: path.join(__dirname, './src/index.js')
@@ -31,9 +31,5 @@ module.exports = {
         include: __dirname
       }
    ]
- },
-// resolve: {
-//     extensions: ['', '.js', '.styl']
-//   },
-plugins: [HtmlWebpackPluginConfig]
+ }
 }
