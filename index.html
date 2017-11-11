@@ -2,12 +2,36 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>D3 Webpack Babel</title>
+<title>D3 demo</title>
 </head>
 <body>
-<h1>Hi</h1>
-<div class="bubble-chart"></div>
-<svg class="chart"></svg>
+  <select id="data-options">
+    <option value="0">监测站A</option>
+    <option value="1">监测站B</option>
+    <option value="2">监测站C</option>
+  </select>
+  <select id="math-options">
+    <option value="avg">平均值</option>
+    <option value="max">最大值</option>
+    <option value="min">最小值</option>
+  </select>
+  <select id="date-options">
+    <option value="last_week">天</option>
+    <option value="last_month">周</option>
+    <option value="last_year">月</option>
+  </select>
+  <div id="line-chart">
+  </div>
+  <div class="bubble-chart"></div>
+  <select id= "select-date">
+  <option value = "month">月</option>
+  <option value = "week">周</option>
+  <option value = "day">天</option>
+  </select>
+  <div class="pie-chart"></div>
+  <div class="radar-chart"></div>
+  <div class="dependence-chart"></div>
+  <div class="sector-chart"></div>
 </body>
 <script src="/build/index.js"></script>
 </html>
